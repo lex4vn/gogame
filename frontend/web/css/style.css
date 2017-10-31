@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan');
+
+.article-item {
+    margin-bottom: 15px;
+}
+
+.article-item .article-title,
+.article-item .article-title a {
+    color: inherit;
+    margin: 0;
+}
+
+.article-item .article-meta,
+.article-item .article-meta a {
+    color: #999;
+    font-size: .85em;
+}
+
+.article-item .article-meta a {
+    text-decoration: underline;
+}
+
+.article-item .article-thumb {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.article-item .article-text {
+    margin-top: 7px;
+}
+
+html,
+body {
+    height: 100%;
+    background: #302429;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background: url(../img/bg_footer.png) repeat-x center top;
+    height: 69px;
+    margin-top: 85px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after,
+a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+#game-holder {
+    /*min-height: 600px;*/
+}
+
+.game {
+    height: 100%;
+}
+
+.luck {
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.article-item h1 {
+    font-size: 36px;
+    color: #c5db3b;
+}
+
+h6.game-box {
+    background: url('../img/sprite.png') no-repeat top left;
+}
+
+.green, .game-title a,
+.navbar-inverse .navbar-nav.green > .active > a,
+.navbar-inverse .navbar-nav.green > .active > a:hover,
+.navbar-inverse .navbar-nav.green > .active > a:focus {
+    color: #c5db3b;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 30px;
+    color: #c5db3b;
+}
+.game-item {
+    margin-bottom: 20px;
+}
+.game-thumb {
+    border: 2px solid #c5db3b;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.game-title {
+    position:absolute;
+    font-size: 16px;
+    background: #c5db3b;
+    padding: 10px 5px;
+    color: #302429;
+    text-overflow: ellipsis;
+    white-space: nowrap;overflow: hidden;display: block;
+    z-index:10;
+    border-radius: 0 5px 5px 0;
+}
+
+h6.game-box {
+    border-bottom: 5px solid #c5db3b;
+    height: 44px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.game-bottom {
+
+}
+
+figure.game-thumb-holder{
+    display: block;
+    position: relative;
+}
+figure.game-thumb-holder:before {
+    display: block;    
+    content: "";
+    padding: 0 0 34%;
+}
+
+figure.game-sub-thumb-holder{
+    width: 42px;
+    position: relative;
+    flex-shrink:0;    line-height: 30px;
+}
+.game-category-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.game-category-sub-thumb {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.game-category-sub-item a{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 0;
+}
+
+.game-category-sub-title {
+    overflow: visible;
+    line-height: 16px;
+    text-overflow: clip;
+    white-space: normal;
+    display: block;
+    margin: 0;
+    padding: 0 6px;
+}
+.game-thumb-holder img{
+    max-width: 100%;
+}
+
+.game-slug{
+    display:block;
+    padding: 10px 0;
+    margin: 20px 5px;
+    min-height: 148px;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus{
+    background-color: #c5db3b;
+    border-color: #c5db3b;
+    color:#302429;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #c5db3b;
+    background-color:transparent;
+    border:none;
+}
+
+.pagination{
+    margin-top:50px;
+}
+.content,
+.summary{
+    color:#aaa;
+}
+.game-thumb{
+
+}
+
+/*# sourceMappingURL=style.map */
